@@ -11811,23 +11811,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m-ric\\.nuget\\packages\\": {},
+    "C:\\Users\\elieo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SOURCES\\ExpressTalent\\ExpressTalent\\ExpressTalent.csproj",
+      "projectUniqueName": "C:\\Users\\elieo\\OneDrive\\Documents\\ExpressTalent-20210714T035040Z-001\\ExpressTalent\\ExpressTalent\\ExpressTalent.csproj",
       "projectName": "ExpressTalent",
-      "projectPath": "E:\\SOURCES\\ExpressTalent\\ExpressTalent\\ExpressTalent.csproj",
-      "packagesPath": "C:\\Users\\m-ric\\.nuget\\packages\\",
-      "outputPath": "E:\\SOURCES\\ExpressTalent\\ExpressTalent\\obj\\",
+      "projectPath": "C:\\Users\\elieo\\OneDrive\\Documents\\ExpressTalent-20210714T035040Z-001\\ExpressTalent\\ExpressTalent\\ExpressTalent.csproj",
+      "packagesPath": "C:\\Users\\elieo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elieo\\OneDrive\\Documents\\ExpressTalent-20210714T035040Z-001\\ExpressTalent\\ExpressTalent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\m-ric\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\elieo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

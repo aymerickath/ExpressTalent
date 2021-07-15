@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +16,7 @@
     <link rel="stylesheet" href="~/css/flaticon.css" />
 
     <!-- factoryplus-icons css -->
-    <link href="css/factoryplus-icons.css" rel="stylesheet">
+    <link href="~/css/factoryplus-icons.css" rel="stylesheet">
 
     <!-- animate css -->
     <link rel="stylesheet" href="~/css/animate.css" />
@@ -48,48 +46,19 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <style>
+        #cookieConsent {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="home  header-sticky header-v1 hide-topbar-mobile header-sticky">
     <div id="page">
-
-        <!-- Preloader-->
-        <div class="preloader"></div>
-
-        <!-- topbar -->
-        <div id="topbar" class="topbar topbar-1">
-            <div class="container">
-                <div class="row">
-
-                    <div class="topbar-left topbar-widgets text-left col-md-7 col-sm-12 col-xs-12">
-                        <div class="widget widget_text">
-                            <div class="textwidget">
-                                <p>We offer landscaping , maintenance and design services</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="topbar-right topbar-widgets text-right col-md-5 col-sm-12 col-xs-12">
-                        <div id="nav_menu-3" class="widget widget_nav_menu">
-                            <div class="menu-topbar-menu-container">
-                                <ul id="menu-topbar-menu" class="menu">
-                                    <li><a href="#">Latest New</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Request Quote</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div id="fh-header-minimized" class="fh-header-minimized fh-header-v1" style="height: 70px;"></div>
-        <!-- topbar end -->
         <!-- masthead -->
         <header id="masthead" class="site-header show-icon clearfix">
 
@@ -149,21 +118,6 @@
                                             <a href="#"><i class="fa fa-google-plus"></i></a>
                                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                                         </div>
-
-                                        <div class="service-provide item-3">
-                                            <i class="flaticon-nature-6"></i>
-                                            <div>
-                                                <span>The Best Landscaping</span> Service Provider
-                                            </div>
-                                        </div>
-
-                                        <div class="certified item-3">
-                                            <i class="flaticon-medal-2"></i>
-                                            <div>
-                                                <span>Certified Company</span> ISO 9001:2005
-                                            </div>
-                                        </div>
-                                        <div class="header-buttom"><a href="#">Request Quote</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +128,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="site-nav col-sm-12 col-xs-12 col-md-9">
-                                <nav id="site-navigation" class="main-nav primary-nav nav">
+                                <nav id="site-navigation" style="width: fit-content; margin: auto" class="main-nav primary-nav nav">
                                     <ul class="menu">
                                         <li class="current-menu-item">
                                             <a href="index.html" class="dropdown-toggle">Home</a>
@@ -187,58 +141,12 @@
                                         </li>
                                         <li><a href="about-us.html">About Us</a></li>
                                         <li>
-                                            <a href="services.html" class="dropdown-toggle">Services</a>
+                                            <a href="services.html" class="dropdown-toggle">services</a>
                                             <ul class="sub-menu">
-                                                <li><a href="services.html">All Services</a></li>
-                                                <li><a href="irrigation-drainage.html">Irrigation &amp; Drainage</a></li>
-                                                <li><a href="lawn-and-garden-care.html">Lawn &amp; Garden Care</a></li>
-                                                <li><a href="planting-and-removal.html">Planting and Removal</a></li>
-                                                <li><a href="snow-ice-removal.html">Snow &amp; Ice Removal</a></li>
-                                                <li><a href="spring-fall-cleanup.html">Spring &amp; Fall Cleanup</a></li>
-                                                <li><a href="stone-and-hardscaping.html">Stone and Hardscaping</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="projects.html" class="dropdown-toggle">Projects</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="projects.html">Project 2 Columns</a></li>
-                                                <li><a href="projects-column-3.html">Project 3 Columns</a></li>
-                                                <li><a href="projects-column-4.html">Project 4 Columns</a></li>
-                                                <li><a href="projects-single.html">Single Project</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-toggle">Features</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="our-team.html">Our Team</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="pricing-table.html">Pricing Table</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html" class="dropdown-toggle">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="#" class="dropdown-toggle">Blog Grid</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="blog-column-2.html">Blog Grid 2 Columns</a></li>
-                                                        <li><a href="blog-column-3.html">Blog Grid 3 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                                <li><a href="blog-single.html">Single Blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="shop.html" class="dropdown-toggle">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Our Products</a></li>
-                                                <li><a href="shop-single.html">Single Product</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="my-account.html">My account</a></li>
+                                                <li><a href="services.html">all services</a></li>
+                                                <li><a href="irrigation-drainage.html">IT</a></li>
+                                                <li><a href="lawn-and-garden-care.html">Travail General</a></li>
+                                                <li><a href="planting-and-removal.html">Bureau et Administration</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -299,7 +207,7 @@
                         <div class="tp-caption fh_button rev-btn " id="slide-1-layer-8" data-x="['left','left','left','center']" data-hoffset="['386','300','200','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','400']" data-fontweight="['600','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 8; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Our Services </div>
 
                         <!-- LAYER NR. 5 -->
-                        <div class="tp-caption fh_button rev-btn " id="slide-1-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Request quote </div>
+                        <div class="tp-caption fh_button rev-btn " id="slide-1-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Contact </div>
                     </li>
                     <!-- SLIDE  -->
                     <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -319,7 +227,7 @@
                         <div class="tp-caption fh_button rev-btn " id="slide-2-layer-8" data-x="['left','left','left','center']" data-hoffset="['386','300','200','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','400']" data-fontweight="['600','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 8; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Our Services </div>
 
                         <!-- LAYER NR. 10 -->
-                        <div class="tp-caption fh_button rev-btn " id="slide-2-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Request quote </div>
+                        <div class="tp-caption fh_button rev-btn " id="slide-2-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Contact </div>
                     </li>
                     <!-- SLIDE  -->
                     <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -339,7 +247,7 @@
                         <div class="tp-caption fh_button rev-btn " id="slide-3-layer-8" data-x="['left','left','left','center']" data-hoffset="['385','300','200','0']" data-y="['top','top','top','top']" data-voffset="['459','450','450','400']" data-fontweight="['600','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 8; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Our Services </div>
 
                         <!-- LAYER NR. 15 -->
-                        <div class="tp-caption fh_button rev-btn " id="slide-3-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Request quote </div>
+                        <div class="tp-caption fh_button rev-btn " id="slide-3-layer-11" data-x="['left','left','left','center']" data-hoffset="['605','510','410','0']" data-y="['top','top','top','top']" data-voffset="['460','450','450','480']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":900,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(255,200,17);bc:rgb(255,200,17);bw:2 2 2 2;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 9; white-space: nowrap; font-weight: 500; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Contact </div>
                     </li>
                 </ul>
             </div>
@@ -349,10 +257,10 @@
         <div class="welcomesec secpadd">
             <div class="container">
                 <div class="fh-section-title clearfix  text-center style-1 version-dark has-icon">
-                    <h2>Welcome to <span class="main-color">GardenHub</span></h2>
+                    <h2>Bienvenue à <span class="main-color">Express Talent Recrutement</span></h2>
                     <span class="fh-icon"><i class="flaticon-nature-3"></i></span>
                 </div>
-                <p class="haeadingpara text-center">We provide ongoing property maintenance which includes lawn mowing, fertilizing, spring and fall cleanups, de-thatching, aerating, seeding, mulching, edging, herbicide application, plant health care, snow plowing, pruning, and tree care and removal.</p>
+                <p class="haeadingpara text-center">Pour trouver le bon FIT Employeur/Employe, nous sommes les meilleurs... Faites-nous confiance!</p>
 
                 <div class="fh-service  style-1">
                     <div class="service-list row">
@@ -363,8 +271,8 @@
                                     <img src="images/services/service1.jpg" alt="image" width="370" height="210">
                                 </div>
                                 <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Spring &amp; Fall Cleanup</a></h2>
-                                    <p>Our fall clean-up service is the process of removing all leaves, branches of the summer season</p>
+                                    <h2 class="entry-title"><a href="#">IT</a></h2>
+                                    <p>Tous nos offres IT</p>
                                     <a href="#" class="fh-btn-3">Read More</a>
                                 </div>
                             </div>
@@ -376,8 +284,8 @@
                                     <img src="images/services/service2.jpg" alt="image" width="370" height="210">
                                 </div>
                                 <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Snow & Ice Removal</a></h2>
-                                    <p>Snow and Ice removal services can be customized to the best possible solution in the huge area</p>
+                                    <h2 class="entry-title"><a href="#">Travail General</a></h2>
+                                    <p>Toutes nos offres de travail general</p>
                                     <a href="#" class="fh-btn-3">Read More</a>
                                 </div>
                             </div>
@@ -389,47 +297,8 @@
                                     <img src="images/services/service3.jpg" alt="image" width="370" height="210">
                                 </div>
                                 <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Lawn & Garden Care</a></h2>
-                                    <p>Complete range of landscaping services all designed to enhance the beauty of your home and property</p>
-                                    <a href="#" class="fh-btn-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-service  col-xs-12 col-sm-6 col-md-4">
-                            <div class="service-content">
-                                <div class="entry-thumbnail">
-                                    <a href="#"></a>
-                                    <img src="images/services/service4.jpg" alt="image" width="370" height="210">
-                                </div>
-                                <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Irrigation & Drainage</a></h2>
-                                    <p>Watering your lawn and is the key to preserving its lushness and beauty the experts carefully design</p>
-                                    <a href="#" class="fh-btn-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-service  col-xs-12 col-sm-6 col-md-4">
-                            <div class="service-content">
-                                <div class="entry-thumbnail">
-                                    <a href="#"></a>
-                                    <img src="images/services/service5.jpg" alt="image" width="370" height="210">
-                                </div>
-                                <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Stone and Hardscaping</a></h2>
-                                    <p>Steady rains the leaves are dropping and each week our and hauling them off the properties</p>
-                                    <a href="#" class="fh-btn-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-service  col-xs-12 col-sm-6 col-md-4">
-                            <div class="service-content">
-                                <div class="entry-thumbnail">
-                                    <a href="#"></a>
-                                    <img src="images/services/service6.jpg" alt="image" width="370" height="210">
-                                </div>
-                                <div class="summary">
-                                    <h2 class="entry-title"><a href="#">Planting and Removal</a></h2>
-                                    <p>Environmental problems result when exotic plants are placed in the landscape</p>
+                                    <h2 class="entry-title"><a href="#">Bureau et Administration</a></h2>
+                                    <p>Toutes nos offres d'emplois de bureau</p>
                                     <a href="#" class="fh-btn-3">Read More</a>
                                 </div>
                             </div>
@@ -443,6 +312,7 @@
         <div class="ourfeatures1 secpadd">
             <div class="container">
                 <div class="row">
+                    <h2>Nos atouts</h2>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="fh-icon-box  style-1">
                             <h4><a href="#" target=" _blank">Honest and Dependable</a></h4>
@@ -496,7 +366,7 @@
         </div>
         <!-- ourfeatures1  end-->
         <!-- Projects -->
-        <div class="projects1 secpadd">
+        @*<div class="projects1 secpadd">
             <div class="container">
                 <div class="fh-section-title clearfix  text-left style-1 version-light">
                     <div class="container">
@@ -786,14 +656,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
         <!-- Projects end -->
         <!-- About Company -->
         <div class="aboutus1">
             <div class="container">
                 <div class="fh-section-title clearfix  text-center style-1 version-dark">
                     <div class="container">
-                        <h2>About <span class="main-color">Our Company</span></h2>
+                        <h2>About <span class="main-color">Express Talent Recrutement</span></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -856,7 +726,7 @@
 
         <!-- About Company end -->
         <!-- Testimonial -->
-        <div class="testimonial-1">
+        @*<div class="testimonial-1">
             <div class="fh-testimonials-carousel  style-1">
                 <div class="container">
                     <h3 class="feedback-title"><span class="fh-icon icon-1"><i class="flaticon-left-quote-sketch"></i></span>Customer Feedback</h3>
@@ -944,7 +814,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
         <!-- Testimonial end -->
         <!-- Letestnews1 -->
         <div class="letestnews1 secpadd">
@@ -1024,6 +894,7 @@
         <!-- testimonial1 end -->
         <!-- Partner -->
         <div class="partener1">
+            <h3>Ils nous ont fait confiance</h3>
             <div class="container">
                 <div class="fh-partner clearfix dark">
                     <div class="list-item">
@@ -1161,7 +1032,7 @@
                     <div class="col-md-6 col-sm-12 col-xs-12 text-right footer-menu">
                         <ul id="menu-footer-menu" class="menu">
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Request Quote</a></li>
+                            <li><a href="#">Contact</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -1324,8 +1195,8 @@
     <script type="text/javascript" src="~/js/revolution/extensions/revolution.extension.video.min.js"></script>
 
     <!-- script JS  -->
-    <script src="js/scripts.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="~/js/scripts.min.js"></script>
+    <script src="~/js/script.js"></script>
 </body>
 
 </html>
